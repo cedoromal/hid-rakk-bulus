@@ -110,22 +110,22 @@ static __u8 *rakk_bulus_report_fixup(struct hid_device *hdev, __u8 *rdesc, unsig
                 return rakk_bulus_rdesc_fixed;
             }
             break;
-	}
+    }
     return rdesc;
 }
 
 static const struct hid_device_id rakk_bulus_devices[] = {
-	{ HID_USB_DEVICE(USB_VENDOR_ID_RAKK, USB_DEVICE_ID_RAKK_BULUS) },
+    { HID_USB_DEVICE(USB_VENDOR_ID_RAKK, USB_DEVICE_ID_RAKK_BULUS) },
     { HID_USB_DEVICE(USB_VENDOR_ID_RAKK, USB_DEVICE_ID_RAKK_BULUS_DONGLE) },
     { HID_BLUETOOTH_DEVICE(USB_VENDOR_ID_RAKK, USB_DEVICE_ID_RAKK_BULUS_BLUETOOTH) },
-	{ }
+    { }
 };
 MODULE_DEVICE_TABLE(hid, rakk_bulus_devices);
 
 static struct hid_driver rakk_bulus_driver = {
-	.name = "rakk-bulus",
-	.id_table = rakk_bulus_devices,
-	.report_fixup = rakk_bulus_report_fixup,
+    .name = "rakk-bulus",
+    .id_table = rakk_bulus_devices,
+    .report_fixup = rakk_bulus_report_fixup,
 };
 module_hid_driver(rakk_bulus_driver);
 
