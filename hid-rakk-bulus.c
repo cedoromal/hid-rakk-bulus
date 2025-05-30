@@ -90,6 +90,7 @@ static const __u8 rakk_bulus_bluetooth_rdesc_fixed[] = {
     0xC0,                         // END_COLLECTION     Application
 };
 
+// NOTE: For those compiling on a newer kernel, you might want to set the return type of this function to const
 static __u8 *rakk_bulus_report_fixup(struct hid_device *hdev, __u8 *rdesc, unsigned int *rsize) {
     switch (hdev->product) {
         case USB_DEVICE_ID_RAKK_BULUS_BLUETOOTH:
