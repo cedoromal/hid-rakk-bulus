@@ -1,6 +1,6 @@
 # HID Driver for Rakk Bulus
 ## Disclaimer
-This project is tested and is known to work on **Linux Mint 22.1 x86_64** with **Kernel 6.8.0-60-generic**.
+This project was tested and is known to work on **Linux Mint 22.1 x86_64** with **Kernel 6.8.0-60-generic**.
 
 While it is possible to make this work on other distros and kernel versions, I cannot fully guarantee it.
 
