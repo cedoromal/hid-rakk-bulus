@@ -5,7 +5,7 @@ This project was tested and is known to work on **Linux Mint 22.1 x86_64** with 
 While it is possible to make this work on other distros and kernel versions, I cannot fully guarantee it.
 
 ## Installation
-The following commands will build and install the drivers:
+The following commands will build and install the driver:
 ```bash
 make
 sudo make install
