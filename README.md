@@ -4,9 +4,12 @@ This project was tested and is initially known to work on **Linux Mint 22.1 x86_
 
 While it is possible to make this work on other distros and kernel versions, I cannot fully guarantee it.
 
-### Distros and kernel versions tested and working:
+### Distros and kernel versions tested and working (I'll put this list somewhere else in the repo eventually):
 - Linux Mint 22.1 x86_64 (6.8.0-60-generic)
 - Linux Mint 22.1 x86_64 (6.8.0-62-generic)
+
+Also, for those looking to merge this into the kernel, I advise you to do it carefully since apparently the Vendor ID and Device ID for this is also used by others.
+See https://github.com/marcosjrvrael/hid-havit-mouse-module for example.
 
 ## Installation
 The following commands will build and install the driver:
